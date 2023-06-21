@@ -1,20 +1,20 @@
 {
-  "name": "nuxt-netlifycms",
+  "name": "-netlifycms",
   "version": "0.0.1",
   "description": "Yo",
   "author": "Gomah",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts -o",
-    "build": "nuxt-ts build",
-    "start": " nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "-ts -o",
+    "build": "-ts build",
+    "start": " -ts start",
+    "generate": "-ts generate",
     "test:lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore app/",
     "test:unit": "cross-env BABEL_ENV=test jest --coverage",
     "test": "npm run test:lint"
   },
   "config": {
-    "nuxt": {
+    "": {
       "host": "0.0.0.0",
       "port": "3000"
     }
@@ -27,14 +27,14 @@
     "not dead"
   ],
   "dependencies": {
-    "@nuxt/typescript-runtime": "^0.4.10",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/markdownit": "^1.2.9",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "@nuxtjs/style-resources": "^1.0.0",
+    "@/typescript-runtime": "^0.4.10",
+    "@js/eslint-module": "^2.0.0",
+    "@js/markdownit": "^1.2.9",
+    "@js/pwa": "^3.0.0-beta.20",
+    "@js/style-resources": "^1.0.0",
     "fast-glob": "^3.2.2",
-    "nuxt": "^2.13.3",
-    "nuxt-property-decorator": "^2.7.2",
+    "": "^2.13.3",
+    "-property-decorator": "^2.7.2",
     "ts-node": "^8.10.2"
   },
   "devDependencies": {
@@ -44,8 +44,8 @@
     "@babel/runtime-corejs2": "^7.10.4",
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
-    "@nuxt/typescript-build": "^1.0.3",
-    "@nuxtjs/tailwindcss": "^2.0.0",
+    "@/typescript-build": "^1.0.3",
+    "@js/tailwindcss": "^2.0.0",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
     "@typescript-eslint/eslint-plugin": "^3.5.0",

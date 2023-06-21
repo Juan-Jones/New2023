@@ -1,9 +1,9 @@
-import { Configuration } from '@nuxt/types';
+import { Configuration } from '@/types';
 import fg from 'fast-glob';
 import settings from './app/content/settings/general.json';
 import manifest from './app/content/settings/manifest.json';
 
-const nuxtConfig: Configuration = {
+const Config: Configuration = {
   /*
    ** Headers of the page
    */
@@ -72,9 +72,9 @@ const nuxtConfig: Configuration = {
   plugins: [],
 
   /*
-   ** Nuxt.js modules
+   ** .js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
+  modules: ['@js/pwa', '@js/style-resources', '@js/markdownit'],
 
 
   markdownit: {
@@ -130,14 +130,14 @@ const nuxtConfig: Configuration = {
 
   buildModules: [
     [
-      '@nuxt/typescript-build',
+      '@/typescript-build',
       {
         typeCheck: false,
         ignoreNotFoundWarnings: true,
       },
     ],
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
+    '@js/eslint-module',
+    '@js/tailwindcss',
   ],
 
   build: {
@@ -158,7 +158,7 @@ const nuxtConfig: Configuration = {
       },
     },
 
-    publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
+    publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_/',
 
     devtools: process.env.NODE_ENV !== 'production',
 
@@ -187,4 +187,4 @@ const nuxtConfig: Configuration = {
   },
 };
 
-export default nuxtConfig;
+export default Config;
